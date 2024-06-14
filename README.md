@@ -3,8 +3,11 @@ Sammy is a simple discord bot that notifies you when games go on sale! This read
 
 ## Commands
 `$help` - displays all the available commands that can be used with Sammy.
+
 `$hi` - Sammy will say hi back!
+
 `$ping` - Let Sammy know you're ready to ask for assistance
+
 `$sale -<count>` - *still in production* Sammy will tell you what games from your Steam library are currently on sale. Count flag tells Sammy the number of games from your current wishlist that you want to return (it will return just the first <count> specified in the wishlist currenlty.)
 
 ## API Usage
