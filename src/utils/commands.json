@@ -1,0 +1,7 @@
+{
+    "ping": "pong!",
+    "hello": "Hi there!",
+    "game": "is on sale!",
+    "help": "Available commands: `$ping`, `$hello`, `$help`, `$checkGame`"
+}
+  
