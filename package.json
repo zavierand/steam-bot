@@ -17,6 +17,8 @@
     "eslint": "^9.4.0",
     "mocha": "^10.4.0",
     "mongoose": "^8.4.1",
+    "mongosh": "^2.2.9",
+    "node-fetch": "^3.3.2",
     "nodemon": "^3.1.3"
   }
 }
