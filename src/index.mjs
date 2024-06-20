@@ -1,4 +1,4 @@
-import { Client, GatewayIntentBits, EmbedBuilder, MessageMentions } from 'discord.js';
+import { Client, GatewayIntentBits, EmbedBuilder } from 'discord.js';
 import dotenv from 'dotenv';
 import path from 'path';
 import fs from 'fs';
@@ -22,7 +22,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const cmdPath = path.join(__dirname, 'utils', 'commands.json');
-const commands = JSON.parse(fs.readFileSync(cmdPath, 'utf-8'));
+// commented out, but will keep just incase if needed
+//const commands = JSON.parse(fs.readFileSync(cmdPath, 'utf-8'));
 const call = '$';
 
 client.on('ready', () => {
@@ -83,7 +84,7 @@ const handlePrintWishlist = async (msg) => {
         }));
 
         // Create an embed message
-        const exampleEmbed = new EmbedBuilder()
+        const embedMessage = new EmbedBuilder()
             .setColor(0x0099FF)
             .setTitle('Your Wishlist')
             .setAuthor({ name: 'SAMMY', iconURL: 'https://i.imgur.com/AfFp7pu.png', url: 'https://discord.js.org' })
@@ -99,13 +100,13 @@ const handlePrintWishlist = async (msg) => {
                 **Discount:** ${game.savings}%
                 [Link to Store](${game.storeLink})
                 `;
-            exampleEmbed.addFields(
+            embedMessage.addFields(
                 { name: game.title, value: gameInfo, inline: false }
             );
         });
 
         // Reply with the embed message
-        msg.reply({ embeds: [exampleEmbed] });
+        msg.reply({ embeds: [embedMessage] });
 
     } catch (err) {
         msg.reply('Error fetching your wishlist.');
