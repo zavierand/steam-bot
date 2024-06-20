@@ -26,7 +26,7 @@ Few plans for the future. Firstly, I wanted to deploy something that works. The 
 However, as of now - the bot only finds games that are on sale if you play on PC. I want to integrate sales from other stores too such as the PSN store and the Xbox Market next. I also want to get the sort function to work!
 
 # Website
-Currently, there is no website for the bot `):`! But, eventually there will be! If you are interested in my work though, you can find check my [GitHub Proile](https://github.com/zavierand) and my [portfolio website]() for more projects!
+Currently, there is no website for the bot `):`! But, eventually there will be! If you are interested in my work though, you can find check my [GitHub Profile](https://github.com/zavierand) and my [portfolio website](zavierand.github.io/portfolio-website) for more projects!
 
 Also reach out to me if you have any questions regarding the bot or if you would like to talk about a project!
 
